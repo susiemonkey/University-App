@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Attending!</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>
+                We would like to extend our heartfelt thanks for attending the University Open Day. Your presence not only contributes to the success of our event but also allows us to share the vibrant life and opportunities available at our university.
+            </p>
+            <p>
+                We value your feedback as it helps us improve future Open Days and better meet the needs of our visitors. Please take a moment to share your thoughts about your experience, what you enjoyed, and any suggestions you may have. Your insights are crucial for us to enhance our services and ensure an enjoyable experience for everyone.
+            </p>
+            <p>
+                Thank you once again for visiting us! We look forward to welcoming you to our university in the future.
+            </p>
+            <p>
+                Please <a href="feedback-form.html">click here</a> to provide your feedback.
+            </p>
+        </section>
+    </main>
+
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 University Open Day App</p>
+    </footer>
+
+    <script>
+        // JavaScript functions for buttons
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?";
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+
+</body>
+</html>

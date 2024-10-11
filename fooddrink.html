@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food and Drinks - University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Food and Drinks Available</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>During your visit, you can enjoy delicious food and drinks from our various on-campus cafés and dining facilities. Here’s a closer look at what we have to offer:</h2>
+
+            <h3>1. Dolce Vita Café - Our On-Campus Café</h3>
+            <p>
+                The Dolce Vita Café features floor-to-ceiling windows that overlook the beautiful grounds and athletics track. This stylish café serves fully sustainable, triple-certified Smokin Bean Signature Coffee and offers a delightful range of seasonal frappés, iced drinks, exclusive snacks, soft drinks, sandwiches, and hot meals.
+            </p>
+            <p><strong>Location:</strong> Between the Main Campus Library and the Lounge Café Bar.</p>
+            <p><strong>Facilities:</strong> There are suite computers with Wi-Fi access for your convenience, making it a great spot to meet up or catch up on work.</p>
+            <p><strong>Payment:</strong> All catering outlets are cashless and accept only SimmPay Cashless payments (for students and staff) or debit/credit/smart payments at checkout.</p>
+            <p><strong>Track and Trace:</strong> Information is collected at the outlet, facilitated by SimmPay.</p>
+            <p><strong>Opening Times:</strong><br>
+                Weekdays: 8 AM - 5 PM*<br>
+                Weekends: 8 AM - 4 PM*<br>
+                (*Opening hours are subject to change.)
+            </p>
+
+            <h3>2. Naylor Café</h3>
+            <p>
+                The Naylor Café is located off-campus in the Naylor Building, just a short seven-minute walk from the main campus. It proudly serves Smokin Bean Coffee, iced drinks, and a range of sandwiches, snacks, and hot meals.
+            </p>
+            <p><strong>Address:</strong> 99 Waldegrave Road, Teddington, TW11 8LA.</p>
+            <p><strong>Payment:</strong> This café is also cashless and accepts SimmPay Cashless payments or debit/credit/smart payments at checkout.</p>
+            <p><strong>Opening Hours:</strong><br>
+                Weekdays: 9 AM - 4 PM<br>
+                Weekends: Closed<br>
+                (Note: The Naylor Building Café is closed during vacation periods, but a vending service for coffee, snacks, and drinks is available when the café is not open.)
+            </p>
+
+            <h3>3. The Refectory - Our Largest Food Outlet</h3>
+            <p>
+                The Refectory is the largest food outlet on campus, perfect for breakfast, lunch, and dinner. It is open seven days a week, offering freshly cooked meals daily alongside a wide selection of sandwiches, snacks, cold/hot drinks, and essential grocery items.
+            </p>
+            <p><strong>Meal Plan:</strong> All room prices include 14 meals per week during term time, with meals taken as seven evening meals, five breakfasts, and brunch on weekends. The meal plan operates on a point system that calculates the amount of food students can have per meal.</p>
+            <p><strong>Allergen Information:</strong> An extensive menu caters to various dietary needs, with food ingredient and allergen information readily available. Current students can find more details on SIMMSpace or in the Residents' Handbook.</p>
+            <p><strong>Opening Times:</strong><br>
+                Weekdays:<br>
+                Breakfast: 8 AM - 10 AM<br>
+                Lunch: 12 PM - 2 PM<br>
+                Dinner: 4:30 PM - 7 PM<br>
+                Weekends:<br>
+                Brunch: 10:30 AM - 12:30 PM<br>
+                Dinner: 4:30 PM - 6:30 PM
+            </p>
+            <img src="./assets/food.png" alt="Food and Drinks" class="food-drink-image"> <!-- Replace with your actual image path -->
+        </section>
+    </main>
+
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 University Open Day App</p>
+    </footer>
+
+    <script>
+        // JavaScript functions for buttons
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?";
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+
+</body>
+</html>

@@ -465,3 +465,34 @@ p {
         width: 150px; /* Adjust button width for smaller screens */
     }
 }
+/* Responsive image style */
+.food-drink-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Optional: limit max width */
+}
+
+/* Floating button styles */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between buttons */
+}
+
+.share-btn, .register-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007bff; /* Change this color as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.share-btn:hover, .register-btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
