@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - St Mary's University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </header>
+
+    <main>
+        <h1>Frequently Asked Questions (FAQs)</h1>
+
+        <section class="faq-section">
+            <h2>General Questions</h2>
+            <ul>
+                <li><strong>What time does the Open Day start and end?</strong>
+                    <p>The Open Day runs from 9:30 AM to 4:00 PM. Morning ticket holders can arrive between 9:30 AM – 1:00 PM, and afternoon ticket holders can arrive from 1:00 PM – 4:00 PM.</p>
+                </li>
+                <li><strong>Where do I check in?</strong>
+                    <p>Check in at the Main Campus Reception when you arrive. Make sure to have your QR code ready for scanning.</p>
+                </li>
+            </ul>
+
+            <h2>Booking and Tickets</h2>
+            <ul>
+                <li><strong>Do I need to book talks and tours in advance?</strong>
+                    <p>Yes, we encourage you to book your places for talks and tours in advance, as spaces may be limited. You can do this through the Talks and Tours Booking Page.</p>
+                </li>
+                <li><strong>Is there a fee to attend the Open Day?</strong>
+                    <p>No, attending the Open Day is free of charge. However, you need to register for a ticket to access the campus.</p>
+                </li>
+            </ul>
+
+            <h2>Travel and Accessibility</h2>
+            <ul>
+                <li><strong>How do I get to St Mary’s University?</strong>
+                    <p>St Mary’s is easily accessible by train, bus, car, or bike. For detailed travel information, visit the "How to Get to St Mary’s" section in our app.</p>
+                </li>
+                <li><strong>Is parking available on campus?</strong>
+                    <p>Limited parking is available on campus, so we recommend using public transport where possible.</p>
+                </li>
+                <li><strong>What if I have special assistance requirements?</strong>
+                    <p>If you require any special assistance, please contact us at opendays@stmarys.ac.uk ahead of your visit so we can accommodate your needs.</p>
+                </li>
+            </ul>
+
+            <h2>On the Day</h2>
+            <ul>
+                <li><strong>What should I bring with me?</strong>
+                    <p>Bring your QR code, a form of ID, and any questions you may have about studying at St Mary’s.</p>
+                </li>
+                <li><strong>Will there be food and drink available?</strong>
+                    <p>Yes, there will be various food and drink options available on campus throughout the day.</p>
+                </li>
+                <li><strong>Can I bring family or friends?</strong>
+                    <p>Absolutely! You are welcome to bring family and friends along to help you explore the campus and learn more about our programs.</p>
+                </li>
+            </ul>
+
+            <h2>Contact Us</h2>
+            <ul>
+                <li><strong>Who can I contact if I have more questions?</strong>
+                    <p>For any further inquiries, feel free to reach out to us at opendays@stmarys.ac.uk or visit our support desk on the day of the event.</p>
+                </li>
+            </ul>
+        </section>
+
+        <p>We look forward to welcoming you to St Mary’s University and hope you have a fantastic Open Day experience!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St Mary's University</p>
+    </footer>
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <script>
+        // JavaScript functions remain the same
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+
+</body>
+</html>

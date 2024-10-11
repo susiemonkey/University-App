@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100%; /* Ensure the banner takes up the full width of the viewport */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Map Section */
+.map-section {
+    margin: 20px 0;
+}
+
+.map-wrapper {
+    position: relative;
+}
+
+.map-img {
+    width: 100%; /* Make the map image take the full width of the page */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+.map-pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pin-img {
+    width: 40px;
+    height: auto;
+}
+
+.map-text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+ul li::before {
+    content: '• ';
+    color: #ff8c00;
+    font-weight: bold;
+}
+
+strong {
+    color: #ff8c00;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+}
+.nav-back {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.back-icon {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+/* Back button styling */
+header {
+    padding: 10px;
+    text-align: left;
+}
+
+.back-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #00509e;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Checklist styling */
+ul.checklist {
+    list-style: none;
+    padding: 0;
+}
+
+ul.checklist li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+ul.checklist li strong {
+    color: #003366;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+/* Back button styling */
+header {
+    padding: 10px;
+    text-align: left;
+}
+
+.back-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #00509e;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+h1 {
+    color: #003366;
+}
+
+/* Travel options styling */
+ul.travel-options {
+    list-style: none;
+    padding: 0;
+}
+
+ul.travel-options li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+ul.travel-options li strong {
+    color: #003366;
+}
+
+/* Icon styling */
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+/* Back button styling */
+header {
+    padding: 10px;
+    text-align: left;
+}
+
+.back-btn {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-color: #00509e;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+h1 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Campus map section */
+.campus-map-section {
+    text-align: center;
+}
+
+.campus-map {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+}
+
+.pin-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+.map-caption {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #003366;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+/* Booking information sections */
+.booking-info, .important-notes, .access-info {
+    margin-bottom: 30px;
+}
+
+/* Booking link styling */
+.booking-link {
+    color: #00509e;
+    font-weight: bold;
+}
+
+.booking-link:hover {
+    text-decoration: underline;
+}
+/* Cultural Events and Community Spirit sections */
+.cultural-events, .community-spirit, .getting-around {
+    margin-bottom: 30px;
+}
+
+/* Enhancing section headings */
+h2 {
+    color: #00509e;
+    margin-bottom: 10px;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* Accommodation page styles */
+.accommodation-intro, .accommodation-options, .accommodation-support {
+    margin-bottom: 30px;
+}
+
+/* Accommodation image styling */
+.accommodation-image {
+    text-align: center; /* Center the image */
+    margin-bottom: 30px;
+}
+
+.accommodation-img {
+    max-width: 100%; /* Responsive image */
+    height: auto;    /* Maintain aspect ratio */
+}
+
+/* List styles for accommodation options */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* FAQs page styles */
+.faq-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #2c3e50; /* Change heading color */
+}
+
+/* Specific style for FAQ unordered list */
+ul.faq-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding-left: 0;      /* Remove padding */
+}
+
+ul.faq-list li {
+    margin-bottom: 15px;   /* Spacing between items */
+    position: relative;    /* For custom bullet */
+    padding-left: 25px;   /* Space for custom bullet */
+}
+
+ul.faq-list li::before {
+    content: '';           /* Create custom bullet */
+    position: absolute;    /* Position it */
+    left: 0;              /* Position at the start of the list item */
+    top: 50%;             /* Center vertically */
+    transform: translateY(-50%); /* Center the bullet */
+    width: 10px;          /* Width of bullet */
+    height: 10px;         /* Height of bullet */
+    border-radius: 50%;   /* Make it circular */
+    background-color: #e74c3c; /* Color of the bullet */
+}
+
+strong {
+    color: #e74c3c; /* Highlight keywords in questions */
+}
+
+p {
+    margin-top: 5px; /* Space above answers */
+    margin-bottom: 10px; /* Space below answers */
+    line-height: 1.6; /* Improve readability */
+}
+.floating-buttons {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    display: flex; /* Align buttons vertically */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+    z-index: 1000; /* Ensure buttons are above other content */
+}
+
+.share-btn, .register-btn {
+    background-color: #003366; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 8px 12px; /* Smaller padding for a smaller button */
+    font-size: 14px; /* Smaller font size for mobile */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth background color change */
+    width: 180px; /* Set a fixed width for uniformity */
+}
+
+.share-btn:hover, .register-btn:hover {
+    background-color: #00509e; /* Change background on hover */
+}
+
+/* Media Queries for further adjustments */
+@media (max-width: 480px) {
+    .floating-buttons {
+        right: 10px; /* Adjust position for smaller screens */
+        bottom: 10px; /* Adjust position for smaller screens */
+    }
+
+    .share-btn, .register-btn {
+        font-size: 12px; /* Even smaller font size for very small screens */
+        padding: 6px 10px; /* Further reduce padding */
+        width: 150px; /* Adjust button width for smaller screens */
+    }
+}

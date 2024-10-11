@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talks and Tours - St Mary's University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </header>
+
+    <main>
+        <h1>Welcome to the Talks and Tours Booking Page!</h1>
+        <p>At St Mary’s University, we offer various informative sessions and engaging campus tours during our Open Day. Here’s how you can reserve your spots:</p>
+
+        <section class="booking-info">
+            <h2>Booking Information:</h2>
+            <ul>
+                <li><strong>Explore the Schedule:</strong> Browse through the list of talks and tours available, including subject-specific sessions, accommodation talks, and insights into student life.</li>
+                <li><strong>Select Your Sessions:</strong> Click on the sessions you’re interested in to secure your place. Spaces may be limited, so we encourage you to book early!</li>
+                <li><strong>Confirm Your Booking:</strong> After selecting your sessions, please follow the prompts to complete your booking. You’ll receive a confirmation email with details about your chosen talks and tours.</li>
+            </ul>
+        </section>
+
+        <section class="important-notes">
+            <h2>Important Notes:</h2>
+            <ul>
+                <li><strong>Tickets:</strong> Each visitor needs to book only one ticket for campus access, but additional tickets are required for individual talks and tours.</li>
+                <li><strong>Check the App:</strong> Use the MySMU app to stay updated on any changes or announcements related to the schedule.</li>
+            </ul>
+        </section>
+
+        <section class="access-info">
+            <h2>How to Access:</h2>
+            <p><a href="URL_TO_BOOKING_PAGE" class="booking-link">Book Your Talks and Tours Here</a></p>
+        </section>
+
+        <p>We look forward to seeing you at St Mary’s University and hope you enjoy all the exciting sessions we have planned for you! If you have any questions or need assistance, feel free to reach out to our support team.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St Mary's University</p>
+    </footer>
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <script>
+        // JavaScript functions remain the same
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+</body>
+</html>

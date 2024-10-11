@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Map - St Mary's University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </header>
+
+    <main>
+        <h1>Explore the Campus</h1>
+        <p>Welcome to St Mary’s University! Use the map below to explore our beautiful campus. Click on the map to open an interactive version where you can zoom in, explore different buildings, and find your way around with ease.</p>
+
+        <!-- Static Map with Clickable Link -->
+        <section class="campus-map-section">
+            <a href="https://maps.google.com" target="_blank" class="map-link">
+                <div class="map-container">
+                    <img src="./assets/campusmap.png" alt="Campus Map" class="campus-map">
+                    <div class="map-pin">
+                        <img src="./assets/location pin.png" alt="Location Pin" class="pin-icon">
+                    </div>
+                </div>
+            </a>
+            <p class="map-caption">Click to view the <strong>interactive campus map</strong> in a new tab.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St Mary's University</p>
+    </footer>
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <script>
+        // JavaScript functions remain the same
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+</body>
+</html>

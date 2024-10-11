@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before You Arrive - St Mary's University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </header>
+
+    <main>
+        <h1>Before You Arrive: Checklist</h1>
+        <p>Before you arrive at <strong>St Mary’s University</strong> for the Open Day, make sure you’ve completed these important steps for a smooth and enjoyable experience:</p>
+
+        <ul class="checklist">
+            <li><strong>Explore the MySMU app:</strong> Discover the exciting talks, tours, and activities happening throughout the day.</li>
+            <li><strong>Book your place:</strong> Reserve your spot for talks, tours, and other sessions through the app to ensure you don’t miss out.</li>
+            <li><strong>Prepare questions:</strong> Write down any questions you want answered during your visit.</li>
+            <li><strong>Have your QR code ready:</strong> Keep your QR code on your phone for quick and easy check-in upon arrival.</li>
+            <li><strong>Plan your journey:</strong> Plan your trip to St Mary’s in Twickenham, allowing extra time to reach campus for your first activity.</li>
+            <li><strong>Book train tickets:</strong> Consider booking train tickets in advance, especially if traveling from outside the local area.</li>
+            <li><strong>Arrange overnight accommodation:</strong> Book nearby accommodation if you plan to stay overnight (if applicable).</li>
+            <li><strong>Special assistance:</strong> Contact us at <a href="mailto:opendays@stmarys.ac.uk">opendays@stmarys.ac.uk</a> if you need any special assistance on the day.</li>
+        </ul>
+
+        <p>By ticking off this checklist, you’ll ensure everything is set for a great Open Day at St Mary’s University!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St Mary's University</p>
+    </footer>
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <script>
+        // JavaScript functions remain the same
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+
+</body>
+</html>
+
+

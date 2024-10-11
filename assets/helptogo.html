@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Get to St Mary's - St Mary's University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </header>
+
+    <main>
+        <h1>How to Get to St Mary's</h1>
+        <p><strong>St Mary’s University</strong> is located in the heart of Twickenham, offering excellent transport links to central London and beyond. Here are the key travel options:</p>
+
+        <ul class="travel-options">
+            <li>
+                <img src="./assets/train.png" alt="Train Icon" class="icon">
+                <strong>By Train:</strong> The nearest station is Strawberry Hill, just a 5-minute walk from campus. It’s served by regular trains from London Waterloo (journey time approx. 35 minutes). You can also travel via Twickenham Station, which is about a 20-minute walk or a short bus ride away.
+            </li>
+            <li>
+                <img src="./assets/bus.png" alt="Bus Icon" class="icon">
+                <strong>By Bus:</strong> Several bus routes serve the area, including the 33, 281, 267, R68, and R70, with stops near the campus.
+            </li>
+            <li>
+                <img src="./assets/car.jpg" alt="Car Icon" class="icon">
+                <strong>By Car:</strong> Limited parking is available on campus, but we encourage using public transport where possible. If driving, Twickenham is accessible via the A316, and you can find parking at nearby pay-and-display car parks.
+            </li>
+            <li>
+                <img src="./assets/bicycle.svg" alt="Bike Icon" class="icon">
+                <strong>By Bike:</strong> St Mary’s is bike-friendly, with plenty of cycle racks available across the campus.
+            </li>
+        </ul>
+
+        <p>For detailed directions, you can use the <strong>MySMU app</strong> to help plan your journey.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St Mary's University</p>
+    </footer>
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <script>
+        // JavaScript functions remain the same
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+
+</body>
+</html>
+

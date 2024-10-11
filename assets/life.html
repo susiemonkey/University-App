@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twickenham Life - St Mary's University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Floating buttons styles */
+        .floating-buttons {
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            display: flex; /* Align buttons horizontally */
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 10px; /* Space between buttons */
+            z-index: 1000; /* Ensure buttons are above other content */
+        }
+
+        .share-btn, .register-btn {
+            background-color: #003366; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Padding for the button */
+            font-size: 16px; /* Font size */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Change cursor to pointer */
+            transition: background-color 0.3s; /* Smooth background color change */
+        }
+
+        .share-btn:hover, .register-btn:hover {
+            background-color: #00509e; /* Change background on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </header>
+
+    <main>
+        <h1>Welcome to Twickenham!</h1>
+        <p>A vibrant town that perfectly complements your experience at St Mary’s University! Known for its beautiful riverside views and rich history, Twickenham offers a unique blend of culture, leisure, and community. Here’s what you can look forward to during your visit:</p>
+
+        <section class="local-attractions">
+            <h2>Local Attractions</h2>
+            <ul>
+                <li>
+                    <strong>Twickenham Stadium:</strong> As the home of English rugby, it’s a must-visit for sports fans. Take a guided tour, explore the World Rugby Museum, and soak in the exciting atmosphere on match days.
+                </li>
+                <li>
+                    <strong>The Thames River:</strong> Enjoy a leisurely stroll along the Thames Path, where you can take in scenic views, relax by the riverside, or even embark on a boat trip. The riverside is perfect for picnics or simply unwinding.
+                </li>
+                <li>
+                    <strong>Richmond Park:</strong> Just a short distance away, this royal park is known for its deer population and beautiful walking paths. It’s an excellent spot for outdoor activities, including cycling, jogging, and picnicking.
+                </li>
+            </ul>
+        </section>
+
+        <section class="dining-shopping">
+            <h2>Dining and Shopping</h2>
+            <p>
+                <strong>Local Restaurants and Cafés:</strong> Twickenham boasts a variety of eateries, from traditional pubs to contemporary restaurants and cozy cafés. Whether you're in the mood for international cuisine or classic British fare, you'll find something to satisfy your cravings.
+            </p>
+            <p>
+                <strong>Independent Shops:</strong> Explore the charming high street filled with independent shops, boutiques, and markets. Discover unique gifts, fashion, and artisanal products that reflect the local community's creativity.
+            </p>
+        </section>
+
+        <section class="cultural-events">
+            <h2>Cultural Events</h2>
+            <ul>
+                <li>
+                    <strong>Local Markets:</strong> Experience the vibrant community spirit at local markets, offering fresh produce, handmade goods, and artisan products. Check out the Twickenham Farmers' Market on Saturdays for a taste of local flavors.
+                </li>
+                <li>
+                    <strong>Art and Theatre:</strong> Twickenham has a thriving arts scene with various galleries and theatres showcasing local talent. Look out for performances, exhibitions, and events happening during your visit.
+                </li>
+            </ul>
+        </section>
+
+        <section class="community-spirit">
+            <h2>Community Spirit</h2>
+            <ul>
+                <li>
+                    <strong>Friendly Locals:</strong> Twickenham is known for its welcoming atmosphere and friendly residents. Engage with the local community, and you’ll find many people eager to share their love for the area.
+                </li>
+                <li>
+                    <strong>Student Life:</strong> As a student at St Mary’s University, you’ll have the opportunity to immerse yourself in Twickenham's vibrant student community. Participate in local events and activities that connect you with fellow students and residents.
+                </li>
+            </ul>
+        </section>
+
+        <section class="getting-around">
+            <h2>Getting Around</h2>
+            <ul>
+                <li>
+                    <strong>Public Transport:</strong> Twickenham is well-connected to central London via train and bus services, making it easy to explore the wider area. The local transport network ensures that you can easily travel to and from the university and the town.
+                </li>
+                <li>
+                    <strong>Walking and Cycling:</strong> The town is pedestrian-friendly, with many attractions within walking distance. Cycling is also a popular way to explore Twickenham and its surroundings.
+                </li>
+            </ul>
+        </section>
+
+        <p>We hope you take the time to explore Twickenham during your visit to St Mary’s University! The town offers a rich cultural experience that complements your academic journey, providing a fantastic backdrop for your studies and social life. If you have any questions or need recommendations, feel free to ask our student ambassadors during the Open Day. Enjoy your time in Twickenham!</p>
+        <div class="floating-buttons">
+            <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+            <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+        </div>
+    
+        <script>
+            // JavaScript functions remain the same
+            function shareOpenDay() {
+                const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+                const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+                const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+                
+                window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+            }
+    
+            function registerOpenDay() {
+                const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+                window.location.href = registrationUrl; // Redirect to the registration page
+            }
+        </script>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St Mary's University</p>
+    </footer>
+  
+</body>
+</html>

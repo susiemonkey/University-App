@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St Mary's Open Day</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this is the correct path to your CSS -->
+    <style>
+        /* Basic styles for the page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            background-image: url('school-logo.png'); /* Replace with your school logo path */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background */
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px; /* Title size */
+            color: #003366; /* Title color */
+            margin-bottom: 20px; /* Spacing below title */
+        }
+
+        nav {
+            margin: 20px 0; /* Margin above and below nav */
+        }
+
+        .menu {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove padding */
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Arrange items vertically */
+            align-items: center; /* Center items */
+        }
+
+        .menu li {
+            margin: 10px 0; /* Spacing between menu items */
+            width: 100%; /* Full width for buttons */
+        }
+
+        .menu a {
+            text-decoration: none; /* Remove underline */
+            color: white; /* Link color */
+            font-size: 18px; /* Link font size */
+            transition: background-color 0.3s; /* Smooth color change */
+            display: block; /* Make links block-level */
+            padding: 15px; /* Padding for clickable area */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Background colors for each link */
+        .menu li:nth-child(odd) a {
+            background-color: rgba(0, 51, 102, 0.8); /* Dark blue for odd items */
+        }
+
+        .menu li:nth-child(even) a {
+            background-color: rgba(255, 140, 0, 0.8); /* Orange for even items */
+        }
+
+        .menu a:hover {
+            background-color: rgba(0, 51, 102, 0.9); /* Darker blue on hover */
+        }
+
+        footer {
+            margin-top: 30px; /* Margin above footer */
+            font-size: 14px; /* Footer font size */
+        }
+
+        /* Floating buttons styles */
+        .floating-buttons {
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            display: flex; /* Align buttons vertically */
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 10px; /* Space between buttons */
+            z-index: 1000; /* Ensure buttons are above other content */
+        }
+
+        .share-btn, .register-btn {
+            background-color: #003366; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            padding: 10px 15px; /* Button padding */
+            font-size: 16px; /* Button font size */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Change cursor to pointer */
+            transition: background-color 0.3s; /* Smooth background color change */
+            width: 180px; /* Set a fixed width for uniformity */
+        }
+
+        .share-btn:hover, .register-btn:hover {
+            background-color: #00509e; /* Change background on hover */
+        }
+        .logo {
+    max-width: 100%; /* Responsive logo */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image */
+    padding-bottom: 20px; /* Spacing below the logo */
+}
+
+
+        /* Media Queries for further adjustments */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px; /* Smaller title size for mobile */
+            }
+
+            .menu a {
+                font-size: 16px; /* Smaller link font size for mobile */
+            }
+
+            .share-btn, .register-btn {
+                font-size: 14px; /* Smaller font size for buttons on mobile */
+                padding: 8px; /* Adjust padding for buttons */
+                width: 150px; /* Adjust button width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./assets/banner.png" alt="University Logo" class="logo"> <!-- Replace with your logo path -->
+        <h1>St Mary's Open Day November 2024</h1>
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <li><a href="welcome.html">Welcome and Introduction</a></li>
+            <li><a href="before-open-day.html">Before the Open Day (Checklist and Tips)</a></li>
+            <li><a href="how-to-get.html">How to Get to St Mary’s</a></li>
+            <li><a href="campus-maps.html">Campus Maps</a></li>
+            <li><a href="arrival-points.html">Arrival Points</a></li>
+            <li><a href="book-tickets.html">Book Tickets for Talk & Tour</a></li>
+            <li><a href="accommodation.html">Accommodation</a></li>
+            <li><a href="food-drink.html">Food and Drink</a></li>
+            <li><a href="twickenham-life.html">Twickenham Life</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="feedback.html">Open Day Feedback Survey</a></li>
+        </ul>
+    </nav>
+
+    <footer>
+        <p>&copy; 2024 University Open Day App</p>
+    </footer>
+
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <script>
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+
+</body>
+</html>

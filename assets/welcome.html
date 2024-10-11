@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - St Mary's University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <header>
+            <!-- Back Button -->
+            <div class="nav-back">
+                <a href="index.html">
+                    <img src="./assets/pngtree-vector-back-icon-png-image_1023353.jpg" alt="Back" class="back-icon"> Back
+                </a>
+            </div>
+        <!-- University Logo -->
+        <img src="./assets/banner.png" alt="St Mary's University Logo" class="logo">
+    </header>
+
+    <!-- Static Map with Pin -->
+    <section class="map-section">
+        <a href="https://maps.google.com" target="_blank" class="map-link">
+            <div class="map-wrapper">
+                <img src="./assets/map.png" alt="Map with Location Pin" class="map-img">
+                <div class="map-pin">
+                    <img src="pin-icon.png" alt="Location Pin" class="pin-img">
+                </div>
+            </div>
+        </a>
+        <p class="map-text">Click to view the <strong>Live Map</strong> of St Mary's University</p>
+    </section>
+
+    <main>
+        <!-- Welcome Text -->
+        <h1>Welcome to St Mary's Undergraduate Open Day!</h1>
+        <p>We're delighted to have you here and thank you for joining us. Today is all about giving you the <strong>best insight</strong> into life at St Mary's and helping you discover everything our vibrant campus has to offer. Located in the heart of <strong>Twickenham</strong>, we're proud of our <strong>friendly and supportive community</strong>, and we hope you'll feel right at home as you explore.</p>
+
+        <p>To help you make the most of your visit, we encourage you to use the <strong>MySMU app</strong>, where you’ll find everything you need for a smooth and enjoyable day.</p>
+
+        <h2>Here’s what the app can help you with:</h2>
+        <ul>
+            <li><strong>Before the Open Day:</strong> Find a helpful checklist and tips to get ready for your visit.</li>
+            <li><strong>How to get to St Mary’s:</strong> Directions and travel options to ensure you arrive easily.</li>
+            <li><strong>Campus Maps:</strong> Navigate your way around our beautiful campus with ease.</li>
+            <li><strong>Book tickets for talks & tours:</strong> Reserve your spot for subject talks, campus tours, and accommodation visits.</li>
+            <li><strong>Accommodation:</strong> Explore our range of housing options to get a feel for student living.</li>
+            <li><strong>FAQs:</strong> Got questions? Find answers to common queries here.</li>
+            <li><strong>Food and drink:</strong> Discover where to grab a bite or a coffee during your visit.</li>
+            <li><strong>Twickenham Life:</strong> Learn about the local area and what makes it a great place to live and study.</li>
+            <li><strong>Open Day feedback survey:</strong> We value your feedback—don’t forget to share your thoughts on the day!</li>
+        </ul>
+
+        <p>If you need help at any point, feel free to ask our friendly staff and student ambassadors. We hope you have a fantastic time exploring all that <strong>St Mary’s University</strong> has to offer!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St Mary's University</p>
+    </footer>
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <script>
+        // JavaScript functions remain the same
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+</body>
+</html>
+
+

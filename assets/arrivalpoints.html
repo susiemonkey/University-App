@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrival Points - St Mary's University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </header>
+
+    <main>
+        <h1>Arrival Points for St Mary's University Open Day</h1>
+        
+        <section class="check-in-info">
+            <h2>Check-in Location</h2>
+            <p><strong>St Mary’s University, Main Campus Reception</strong></p>
+
+            <h2>When to Check In?</h2>
+            <p><strong>Morning Ticket Holders:</strong> 9.30am – 1.00pm</p>
+            <p><strong>Afternoon Ticket Holders:</strong> 1.00pm – 4.00pm</p>
+
+            <h2>Important Information</h2>
+            <p>Please ensure you have your QR code ready, which you’ll find in the reminder email sent a few days before the Open Day. The QR code will be scanned for entry when you arrive on campus.</p>
+
+            <p>Plan your arrival time based on your schedule and the locations of your talks, tours, and activities. You can use the MySMU app for digital campus maps to help you navigate, and you’ll also receive a printed map when you check in.</p>
+
+            <p>Our friendly student ambassadors will be around to assist you and guide you between locations throughout your visit.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St Mary's University</p>
+    </footer>
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <script>
+        // JavaScript functions remain the same
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+
+</body>
+</html>

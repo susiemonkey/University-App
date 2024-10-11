@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accommodation - St Mary's University Open Day</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> <!-- Your JavaScript file -->
+    <style>
+        /* Floating buttons styles */
+        .floating-buttons {
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            display: flex; /* Align buttons horizontally */
+            flex-direction: column; /* Stack buttons vertically */
+            gap: 10px; /* Space between buttons */
+            z-index: 1000; /* Ensure buttons are above other content */
+        }
+
+        .share-btn, .register-btn {
+            background-color: #003366; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Padding for the button */
+            font-size: 16px; /* Font size */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Change cursor to pointer */
+            transition: background-color 0.3s; /* Smooth background color change */
+        }
+
+        .share-btn:hover, .register-btn:hover {
+            background-color: #00509e; /* Change background on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='index.html'">← Back</button>
+    </header>
+
+    <main>
+        <h1>Accommodation Options at St Mary's University</h1>
+
+        <section class="accommodation-intro">
+            <p>At St Mary's University, we offer a range of accommodation options designed to suit different needs and budgets. Our friendly and supportive community ensures that you will feel at home while studying with us.</p>
+        </section>
+
+        <section class="accommodation-options">
+            <h2>Types of Accommodation</h2>
+            <ul>
+                <li>
+                    <strong>Halls of Residence:</strong> Modern, fully furnished rooms located within easy reach of the campus. Enjoy a vibrant community atmosphere with social activities and support available.
+                </li>
+                <li>
+                    <strong>Shared Houses:</strong> A great option for students looking for a more independent living experience. These houses come equipped with shared kitchens and communal spaces.
+                </li>
+                <li>
+                    <strong>Private Rentals:</strong> Explore a variety of private accommodation options available in Twickenham. Whether you're looking for a flat or a house share, you’ll find plenty of choices nearby.
+                </li>
+            </ul>
+        </section>
+
+        <section class="accommodation-image">
+            <img src="./assets/accommodation.png" alt="Accommodation at St Mary's University" class="accommodation-img">
+        </section>
+
+        <section class="accommodation-support">
+            <h2>Support and Resources</h2>
+            <p>Our accommodation team is here to help you find the perfect place to live during your studies. We provide:</p>
+            <ul>
+                <li>Advice on choosing the right accommodation type</li>
+                <li>Guidance on tenancy agreements and housing regulations</li>
+                <li>Support for any issues that may arise during your stay</li>
+            </ul>
+            <p>If you have any questions or need assistance, feel free to contact us or visit the accommodation office on campus.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 St Mary's University</p>
+    </footer>
+    <div class="floating-buttons">
+        <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
+        <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>
+    </div>
+
+    <script>
+        // JavaScript functions remain the same
+        function shareOpenDay() {
+            const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
+            const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(shareText)}`;
+            
+            window.open(shareUrl, "_blank"); // Open the share URL in a new tab
+        }
+
+        function registerOpenDay() {
+            const registrationUrl = "YOUR_REGISTRATION_PAGE_URL"; // Replace with your actual registration page URL
+            window.location.href = registrationUrl; // Redirect to the registration page
+        }
+    </script>
+
+</body>
+</html>
