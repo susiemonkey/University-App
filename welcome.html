@@ -8,18 +8,12 @@
 </head>
 <body>
     <header>
-        <header>
-            <!-- Back Button -->
-            <div class="nav-back">
-                <a href="index.html">
-                    <img src="./assets/pngtree-vector-back-icon-png-image_1023353.jpg" alt="Back" class="back-icon"> Back
-                </a>
-            </div>
-        <!-- University Logo -->
-        <img src="./assets/banner.png" alt="St Mary's University Logo" class="logo">
+        <div class="nav-back">
+            <a href="index.html" class="back-btn">← Back</a> <!-- Updated to match other page styles -->
+        </div>
+        <h1>Welcome to St Mary's Undergraduate Open Day!</h1>
     </header>
 
-    <!-- Static Map with Pin -->
     <section class="map-section">
         <a href="https://maps.google.com" target="_blank" class="map-link">
             <div class="map-wrapper">
@@ -33,8 +27,6 @@
     </section>
 
     <main>
-        <!-- Welcome Text -->
-        <h1>Welcome to St Mary's Undergraduate Open Day!</h1>
         <p>We're delighted to have you here and thank you for joining us. Today is all about giving you the <strong>best insight</strong> into life at St Mary's and helping you discover everything our vibrant campus has to offer. Located in the heart of <strong>Twickenham</strong>, we're proud of our <strong>friendly and supportive community</strong>, and we hope you'll feel right at home as you explore.</p>
 
         <p>To help you make the most of your visit, we encourage you to use the <strong>MySMU app</strong>, where you’ll find everything you need for a smooth and enjoyable day.</p>
@@ -53,6 +45,32 @@
         </ul>
 
         <p>If you need help at any point, feel free to ask our friendly staff and student ambassadors. We hope you have a fantastic time exploring all that <strong>St Mary’s University</strong> has to offer!</p>
+
+        <!-- New Section: Why Choose St Mary's University? -->
+        <section class="why-choose">
+            <h2>Why Choose St Mary’s University?</h2>
+            <p>St Mary’s University offers a welcoming community, academic excellence, and a vibrant student life. Visitors will have the opportunity to engage with faculty, current students, and explore campus facilities. The Open Day is designed to provide insights into various programs, student support, and extracurricular activities.</p>
+            <ul>
+                <li>Top 5 for teaching quality</li>
+                <li>Top 10 for student experience</li>
+                <li>Community dedicated to personal and professional growth</li>
+                <li>1st in London for academic support</li>
+                <li>96% of graduates are in employment, vocation, or further study within 15 months of graduation</li>
+                <li>Rated Ofsted Outstanding for over 13 years</li>
+            </ul>
+
+            <!-- Adding GIF and PNG images -->
+            <div class="image-gallery">
+                <video controls class="engaging-video">
+                    <source src="./assets/open DAY.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="./assets/1.png" alt="Attractive Poster 1" class="poster-img">
+                <img src="./assets/2.png" alt="Attractive Poster 2" class="poster-img">
+                <img src="./assets/3.png" alt="Attractive Poster 3" class="poster-img">
+            </div>
+        </section>
+        <!-- End of New Section -->
     </main>
 
     <footer>
@@ -64,7 +82,6 @@
     </div>
 
     <script>
-        // JavaScript functions remain the same
         function shareOpenDay() {
             const shareText = "I'm attending the Open Day at St Mary’s University. Would you like to join me?"; // Share message
             const url = "YOUR_OPEN_DAY_PAGE_URL"; // Replace with your actual Open Day page URL
@@ -80,5 +97,3 @@
     </script>
 </body>
 </html>
-
-

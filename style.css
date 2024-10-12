@@ -496,3 +496,33 @@ p {
 .share-btn:hover, .register-btn:hover {
     background-color: #0056b3; /* Darker shade for hover effect */
 }
+/* Container to center items and set equal size */
+.media-container {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+}
+
+/* Style for the engaging video */
+.engaging-video {
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Set a max width for the video */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for the video */
+    align-items: center;
+}
+
+/* Style for the poster images */
+.poster-img {
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Set a max width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    object-fit: cover; /* Ensure images cover their area without distortion */
+}
+.restaurant-image {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 15px; 
+}

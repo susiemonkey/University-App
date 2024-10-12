@@ -32,6 +32,21 @@
         .share-btn:hover, .register-btn:hover {
             background-color: #00509e; /* Change background on hover */
         }
+
+        /* Styles for images */
+        .image {
+            max-width: 80%; /* Responsive image with a max width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Rounded corners */
+            margin: 20px auto; /* Center the image with space around */
+            display: block; /* Ensure the image behaves as a block element */
+        }
+
+        /* Centering text within list items */
+        li {
+            text-align: center; /* Center text in list items */
+            margin-bottom: 40px; /* Space between list items */
+        }
     </style>
 </head>
 <body>
@@ -50,12 +65,15 @@
             <ul>
                 <li>
                     <strong>Twickenham Stadium:</strong> As the home of English rugby, it’s a must-visit for sports fans. Take a guided tour, explore the World Rugby Museum, and soak in the exciting atmosphere on match days.
+                    <img src="./assets/stadium.jpeg" alt="Twickenham Stadium" class="image"> <!-- Placeholder image path -->
                 </li>
                 <li>
                     <strong>The Thames River:</strong> Enjoy a leisurely stroll along the Thames Path, where you can take in scenic views, relax by the riverside, or even embark on a boat trip. The riverside is perfect for picnics or simply unwinding.
+                    <img src="./assets/thames.jpg" alt="The Thames River" class="image"> <!-- Placeholder image path -->
                 </li>
                 <li>
                     <strong>Richmond Park:</strong> Just a short distance away, this royal park is known for its deer population and beautiful walking paths. It’s an excellent spot for outdoor activities, including cycling, jogging, and picnicking.
+                    <img src="./assets/richmond park.jpg" alt="Richmond Park" class="image"> <!-- Placeholder image path -->
                 </li>
             </ul>
         </section>
@@ -64,9 +82,11 @@
             <h2>Dining and Shopping</h2>
             <p>
                 <strong>Local Restaurants and Cafés:</strong> Twickenham boasts a variety of eateries, from traditional pubs to contemporary restaurants and cozy cafés. Whether you're in the mood for international cuisine or classic British fare, you'll find something to satisfy your cravings.
+                <img src="./assets/cafes.jpg" alt="Local Cafés in Twickenham" class="image"> <!-- Placeholder image path -->
             </p>
             <p>
                 <strong>Independent Shops:</strong> Explore the charming high street filled with independent shops, boutiques, and markets. Discover unique gifts, fashion, and artisanal products that reflect the local community's creativity.
+                <img src="./assets/shops.png" alt="Independent Shops" class="image"> <!-- Placeholder image path -->
             </p>
         </section>
 
@@ -75,9 +95,11 @@
             <ul>
                 <li>
                     <strong>Local Markets:</strong> Experience the vibrant community spirit at local markets, offering fresh produce, handmade goods, and artisan products. Check out the Twickenham Farmers' Market on Saturdays for a taste of local flavors.
+                    <img src="./assets/markets.jpg" alt="Local Markets" class="image"> <!-- Placeholder image path -->
                 </li>
                 <li>
                     <strong>Art and Theatre:</strong> Twickenham has a thriving arts scene with various galleries and theatres showcasing local talent. Look out for performances, exhibitions, and events happening during your visit.
+                    <img src="./assets/arts.jpeg" alt="Art and Theatre" class="image"> <!-- Placeholder image path -->
                 </li>
             </ul>
         </section>
@@ -87,9 +109,11 @@
             <ul>
                 <li>
                     <strong>Friendly Locals:</strong> Twickenham is known for its welcoming atmosphere and friendly residents. Engage with the local community, and you’ll find many people eager to share their love for the area.
+                    <img src="./assets/local.webp" alt="Friendly Locals" class="image"> <!-- Placeholder image path -->
                 </li>
                 <li>
                     <strong>Student Life:</strong> As a student at St Mary’s University, you’ll have the opportunity to immerse yourself in Twickenham's vibrant student community. Participate in local events and activities that connect you with fellow students and residents.
+                    <img src="./assets/student1.jpg" alt="Student Life" class="image"> <!-- Placeholder image path -->
                 </li>
             </ul>
         </section>
@@ -107,6 +131,7 @@
         </section>
 
         <p>We hope you take the time to explore Twickenham during your visit to St Mary’s University! The town offers a rich cultural experience that complements your academic journey, providing a fantastic backdrop for your studies and social life. If you have any questions or need recommendations, feel free to ask our student ambassadors during the Open Day. Enjoy your time in Twickenham!</p>
+        
         <div class="floating-buttons">
             <button class="share-btn" onclick="shareOpenDay()">Share with Friends to Join Open Day</button>
             <button class="register-btn" onclick="registerOpenDay()">Register for Open Day Now</button>

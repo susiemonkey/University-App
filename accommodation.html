@@ -32,6 +32,24 @@
         .share-btn:hover, .register-btn:hover {
             background-color: #00509e; /* Change background on hover */
         }
+
+        .accommodation-image {
+            text-align: center; /* Center the image */
+            margin: 20px 0; /* Add some margin */
+        }
+
+        .accommodation-image img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Optional: Rounded corners */
+            cursor: pointer; /* Change cursor to pointer when hovering over image */
+        }
+
+        .image-caption {
+            font-size: 18px; /* Font size for the caption */
+            color: #003366; /* Caption color */
+            margin-top: 5px; /* Space between the image and the caption */
+        }
     </style>
 </head>
 <body>
@@ -64,7 +82,10 @@
         </section>
 
         <section class="accommodation-image">
-            <img src="./assets/accommodation.png" alt="Accommodation at St Mary's University" class="accommodation-img">
+            <a href="YOUR_ACCOMMODATION_TOUR_URL" target="_blank"> <!-- Change this URL to your accommodation tour link -->
+                <img src="./assets/accommodation.png" alt="Accommodation at St Mary's University" class="accommodation-img">
+                <div class="image-caption">Click the image to book your accommodation tour!</div>
+            </a>
         </section>
 
         <section class="accommodation-support">
